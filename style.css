@@ -1,0 +1,1034 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    display: flex;
+    max-width: 980px;
+    margin: auto;
+}
+.menu-logo{
+    width: 100px;
+    height: 50px;
+    margin-right: 40px;
+    margin-top: 5px;
+}
+.menu-list{
+    display: flex;
+    font-size: 12px;
+    position: relative;
+    top: 23px;
+}
+.menu-link{
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+}
+.menu-link li{
+    text-transform: uppercase;
+    padding: 0px 12px;
+    color: rgb(49, 49, 49);
+}
+.menu-link:after{
+    content: "";
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 30px;
+    opacity: 0;
+}
+.menu-link:before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 90px;
+    top: -30px;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+}
+.menu-link:hover:after{
+    transition: 0.5s ease-out;
+    opacity: 1;
+    transform: translate(0px, 30px);
+    background-color: rgb(129, 199, 68);
+}
+.menu-link:hover:before {
+    animation: 0.5s ease-out 0s waterfall;
+}
+@keyframes waterfall { 0% { background-color: transparent; } 50% { background-color: rgba(177, 253, 110, 0.7); }  100% {background-color: transparent;}}
+
+.menu-link:last-child{
+    margin-right: 10px;
+}
+.menu-btn{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 21px;
+    margin-right: 20px;
+}
+.under-menu__box{
+    height: 45px;
+    position: relative;
+    z-index: 5;
+    background-color: rgb(129, 199, 68);
+    margin-top: 20px;
+}
+.menu-btn:last-child{
+    margin-right: 0px;
+}
+.menu-btn:hover{
+    cursor: pointer;
+}
+.main-content{
+    max-width: 980px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.main-card{
+    max-width: 456px;
+    margin: auto;
+    margin-top: 40px;
+}
+.main-card__link{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.main-card__title{
+    border-bottom: 2px solid currentColor;
+    border-color: rgb(129, 199, 68) ;
+    width: 397px;
+    text-align: center;
+}
+.main-card__img{
+    width: 427px;
+    height: 317px;
+    margin-top: 10px;
+}
+.main-news{
+    max-width: 980px;
+    margin-top: 40px;
+    display: flex;
+    margin: auto;
+}
+.news-loyout{
+    display: flex;
+    padding: 20px;
+    color: white;
+}
+.news-box{
+    display: block;
+}
+.news-box a{
+    display: block;
+}
+.bg-orange{
+    height: 100%;
+    background-color: orange;
+}
+.footer{
+    background-color: #333;
+    display: flex;
+}
+.footer-block{
+    margin: auto;
+    width: 1020px;
+    display: flex;
+}
+.footer-about__us{
+    display: block;
+    width: 268px;
+}
+.footer-title{
+    font-size: 18px;
+    color: #dad9d9;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border-bottom: 2px solid currentColor;
+    border-color: rgb(129, 199, 68) ;    
+}
+.footer-img{
+    position: relative;
+    width: 14px;
+    height: 14px;
+}
+.about__us-text{
+    color: #999;
+    font-size: 14px;
+    text-align: inherit;
+}
+.footer-publication{
+    display: block;
+    width: 274px;
+    margin-left: 20px;
+}
+.publication-text_1{
+    color: #999;
+    font-size: 14px;
+    text-align: inherit;
+    padding: 5px;
+    width: 274px;
+    height: 50px;
+}
+.publication-text_2{
+    color: #999;
+    font-size: 14px;
+    text-align: inherit;
+    border-top: 1px solid #353535;
+    padding: 5px;
+    width: 274px;
+    height: 50px;
+}
+.publication-text_3{
+    color: #999;
+    font-size: 14px;
+    text-align: inherit;
+    margin-bottom: 20px;
+    border-top: 1px solid #353535;
+    padding: 5px;
+    width: 274px;
+    height: 50px;
+}
+.footer-projects{
+    display: block;
+    width: 220px;
+    margin-left: 20px;
+}
+.footer-contact{
+    display: block;
+    margin-left: 34px;
+    width: 140px;
+}
+.contact-text{
+    color: #999;
+    font-size: 14px;
+    text-align: inherit;
+    margin-bottom: 10px;
+}
+.line-under__footer{
+    background-color: #272727;
+    height: 75px;
+}
+.block-under__footer{
+    background-color: #272727;
+    margin: auto;
+    width: 1000px;
+}
+.text-under__footer{
+    color: #999;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+.news{
+    max-width: 980px;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.news-card{
+    display: block;
+    width: 300px;
+    margin: auto;
+    height: 365px;
+    border: 1px solid #f2f2f2;
+    
+}
+.news-img{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    margin-left: 124px;
+    position: relative;
+    background-color:#74c729 ;
+    border-radius: 50%;
+    margin-top: -24px;
+    margin-bottom: 20px;
+}
+.news-title{
+    text-align: center;
+    width: 300px;
+    margin-bottom:16px;
+    font-size: 20px;
+    color: #555;
+}
+.news-text{
+    text-align: justify;
+    width: 270px;
+    margin-left: 15px;
+    font-size: 15px;
+    color: #555555b8;
+    font-family: PFBeanSansPro_Light;  
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    color: rgb(49, 49, 49);
+}
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    padding: 0px 12px;
+}
+.topmenu > li > a {
+    position: relative;
+}
+
+.topmenu li:hover a:before {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+.submenu {
+    position: absolute;
+    font-family: PFBeauSansPro;
+    z-index: 20;
+    left: 50%;
+    top: 100%;
+    width: 150px;
+    padding: 15px 0 15px;
+    margin-top: 5px;
+    background: white;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .3s;
+}
+.first {
+    width: 167px;
+}
+.second {
+    width: 244px;
+}
+.topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+.submenu a {
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    transition: .3s linear;
+}
+.submenu a:hover {background: #e8e8e8;}
+
+.down:before{
+    left: 50%;
+}
+
+
+
+
+
+
+
+/* стилизация содержимого страницы */
+body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+    background-color: #fff;
+} 
+  
+/* свойства модального окна по умолчанию */
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+      pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    width: 435px;
+    background-color: rgb(129, 199, 68) ;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    display: block;
+    overflow: auto;
+    width: 514px;
+    text-align: -webkit-center;
+    height: 510px;
+    margin-left: 45px;
+}
+.menu-btn__link{
+    display: block;
+    margin-right: 20px;
+}
+.menu-btn__link:last-of-type{
+    margin-right: 0px;
+}
+.strings{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 38px;
+}
+.strings_block{
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 345px;
+    height: 325px;
+}
+.phone_text{
+    font-size: 20px;
+    text-align: initial;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.strings_bottom{
+    width: 158px;
+    height: 35px;
+}
+.modal_line{
+    height: 1px;
+    background: white;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.strings_mail{
+    width: 98.5%;
+    padding: 3px;
+}
+.strings_block label{
+    vertical-align: text-bottom;
+}
+.strings_block label a{
+    font-size: 13px;
+    color: #2433ee;
+}
+.asterix{
+    right: 0;
+    color: red;
+    position: absolute;
+}
+
+/* чекбокс заполнение */
+
+.checkbox_box{
+    display: flex;
+    width: 972px;
+    height: 24px;
+    margin: auto;
+    margin-top: 20px;
+}
+.checkbox_title{
+    color: #58585e;
+}
+.checkbox_title-text{
+    color: gray;
+    opacity: 0.4;
+    margin-left: 24px;
+    width: 354px;
+}
+.main_title{
+    font-size: 46px;
+    text-align: initial;
+}
+.main_title-box{
+    margin: auto;
+    width: 986px;
+    height: 130px;
+    margin-top: 36px;
+}
+.rules_box{
+    width: 986px;
+    margin: auto;
+    height: 2560px;
+}
+.rules_title-main{
+    color: black;
+    font-size: 14px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.rules_text{
+    color:  #58585e;
+}
+.rules_title{
+    color:  #2d2d2f;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Tensyland страница, заполнение */
+
+.tensyland_title-box{
+    width: 980px;
+    margin: auto;
+    margin-top: 30px;
+}
+.tensyland_title{
+    font-size: 22px;
+    text-align: center;
+}
+.tensyland_description{
+    text-align: center;
+}
+.tensyland_main-box{
+    width: 980px;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+}
+.tensyland_box{
+    display: flex;
+}
+.tensyland_pictures-box{
+    width: 300px;
+    height: 300px;
+    margin-left: 18px;
+}
+.tensyland_text{
+    text-align: center;
+    border-color: rgb(129, 199, 68) ;
+    width: 278px;
+}
+.tensyland_pictures{
+    width: 264px;
+    height: 208px;
+}
+
+/* Дополнительное Оборудование */
+
+
+.equipment_tittle-box{
+    width: 980px;
+    margin: auto;
+}
+.title_box{
+    color: black;
+    text-align: center;
+    width: 340px;
+}
+.equipment_line{
+
+}
+.equipment_main-box{
+    width: 980px;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+.equipment_box{
+    display: block;
+    margin-top: 10px;
+}
+.equipment-title_box{
+    display: flex;
+}
+.equipment-title{
+    width: 350px;
+}
+.equipment_text_box{
+    display: flex;
+    width: 980px;
+}
+.equipment-text{
+    width: 350px;
+    font-size: 14px;
+    color: #6a6161;
+    margin-top: 10px;
+}
+.equipment_text{
+
+}
+
+/* План завода tensyland */
+
+.plan_box{
+    width: 980px;
+    margin: auto;
+}
+.plan_text{
+    width: 880px;
+    text-align: inherit;
+    margin-bottom: 50px;
+}
+
+/* Номенклатура выпускаемой продукции */
+
+.perechen{
+    width: 980px;
+    margin: auto;
+}
+.perechen_title{
+    color: black;
+}
+.perechen_box{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+.perechen_table{
+    width: 300px;
+    margin-left: 30px;
+}
+.perechen_text{
+    width: 239px;
+}
+.perechen_img{
+    width: 232px;
+    height: 208px;
+    margin-left: 20px;
+}
+
+/* Продукци, Блоки */
+
+.production{
+    width: 980px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.production_box{
+    width: 980px;
+    display: block;
+    margin: auto;
+}
+.production_strings{
+    display: flex;
+}
+.production_img-block{
+    width: 200px;
+    height: 200px;
+}
+.production_img{
+    width: 200px;
+    height: 200px;
+}
+
+/* модальное окно tensyland */
+
+/* Compacta */
+
+.compacta_title-box{
+    width: 980px;
+    margin: auto;
+    margin-top: 30px;
+}
+.compacta_title{
+    font-size: 22px;
+    text-align: center;
+}
+.compacta_text{
+   text-align: center;
+}
+.compacta_main-box{
+    width: 980px;
+    margin: auto;
+}
+.compacta_box{
+    display: block;
+}
+.compacta_img-box{
+    display: flex;
+
+}
+.compacta_text-box{
+    display: flex;
+
+}
+.compacta_img{
+    width: 238px;
+    height: 202px;
+    margin-left: 7px;
+}
+.compacta_text-inbox_1{
+    width: 250px;
+}
+.compacta_text-inbox_2{
+    width: 250px;
+    margin-left: 40px;
+}
+.compacta_text-inbox_3{
+    width: 250px;
+    margin-left: 40px;
+}
+.compacta_text-inbox_4{
+    width: 250px;
+    margin-right: -60px;
+}
+
+
+.equipment_compacta-main_box{
+    width: 980px;
+    margin: auto;
+    margin-top: 30px;
+}
+.equipment_compacta-title{
+
+}
+.equipment_compacta_main-img_box{
+    width: 980px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+}
+.equipment_compacta-img_box{
+    display: flex;
+}
+.equipment_compacta-box{
+    margin-top: 12px;
+}
+.equipment_compacta-img{
+    width: 238px;
+    height: 202px;
+    margin-left: 7px;
+}
+.equipment_compacta-text{
+    text-align: center;
+}
+
+
+.plan_compacta-main-box{
+    width: 980px;
+    margin: auto;
+    margin-bottom: 30px ;
+}
+.plan_compacta_img{
+    margin-top: 30px;
+}
+.plan_compacta-box{
+    width: 980px;
+}
+.plan_compacta-title{
+
+}
+.plan_compacta-text{
+    text-align: inherit;
+    width: 676px;
+    margin-top: 15px;
+}
+
+
+
+.compacta_production-main_box{
+    width: 980px;
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+    margin-bottom: 20px;
+}
+.compacta_production-box{
+    display: flex;
+}
+.compacta_production-img_box{
+    margin-left: 60px;
+}
+.compacta_production-img{
+    width: 238px;
+    height: 202px;
+}
+
+/* compacta модальное окно */
+
+.popap{
+    position: fixed;
+    width: 100%;
+    height: 100%;background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+}
+.popap:target{
+    opacity: 1;
+    visibility: visible;
+}
+.popap__area{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.popap__body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.popap__content{
+    background-color: #fff;
+    color: #000;
+    max-width: 800px;
+    padding: 30px;
+    position: relative;
+}
+.popap__close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+.popap_img{
+    width: 400px;
+    height: 360px;
+}
+
+.opacity_block{
+    position: fixed;
+    opacity: 1;
+}
+
+
+/*Формирующая машина*/
+
+
+.main_formMashina{
+    max-width: 980px;
+    display: block;
+    margin: auto;
+}
+.formMashina_box{
+    display: flex;
+}
+.formMashina_img{
+    width: 500px;
+    height: 385px;
+}
+.formMashina_text{
+    width: 235px;
+    margin-left: 18px;
+    text-align: justify;
+}
+.formMashina_title{
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.formMashina_main_images{
+    max-width: 980px;
+    margin: auto;
+    margin-top: 30px;
+}
+.formMashina_images-box{
+}
+.formMashina_images{
+    margin-right: 15px;
+    width: 200px;  
+}
+
+.formMashina_EVimages{
+    max-width: 980px;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+}
+.EV_box{
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+    margin-top: 35px;
+}
+.EV_img{
+    width: 200px;
+    height: 156px;
+}
+.EV_title{
+    text-align: center;
+}
+.EV_text{
+    text-align: center;
+}
+
+
+.characteristics{
+    margin: auto;
+    max-width: 980px;
+    margin-top: 95px;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    padding: 5px;
+    border: 1px solid #000;
+    background-color: rgb(188, 185, 185);
+}
+tr{
+    padding: 5px;
+    border: 1px solid #000;
+}
+td {
+    padding: 5px;
+    border: 1px solid #000;
+}
+.text_auto-table{
+    color: #1c1a1a;
+    font-family: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+/*cutting machine*/
+
+.main_cutting_machine{
+    width: 980px;
+    margin: auto;
+}
+.cutting_machine_title{
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cutting_machine_text{
+    margin-left: 30px;
+    width: 930px;
+}
+.main_with_img-cutting_machine{
+    max-width: 980px;
+    display: flex;
+    margin: auto;
+    margin-top: 35px;
+}
+.img-container_cutting_machine{
+    margin-right: 15px;
+}
+.img-helper_main-cutting_muchine{
+    display: flex;
+    width: 700px;
+    margin-left: 30px;
+}
+.img-cutting_machine{
+    width: 200px;
+    height: 156px;
+}
+.img-title_cutting_machine{
+    font-size: 15px; 
+    margin-left: 2px;
+}
+.img-text-cutting_machine{
+    font-size: 14px;
+    margin-left: 2px;
+}
+.characteristics-cutting_machine{
+    margin: auto;
+    max-width: 980px;
+    margin-top: 95px;
+    margin-bottom: 30px;
+}
